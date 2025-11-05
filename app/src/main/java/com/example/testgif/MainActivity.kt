@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         Utils.applyFullScreen(supportActionBar, window)
 
         // gif
-        val eyesView = findViewById<ImageView>(R.id.eyes)
-        Glide.with(this).load(R.raw.eyes).into(eyesView)
+        val gifView = findViewById<ImageView>(R.id.gif)
+        Glide.with(this).load(R.raw.eyes).into(gifView)
     }
 }

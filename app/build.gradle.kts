@@ -30,6 +30,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    signingConfigs {
+        create("signing") {
+            storeFile = file("../testgif_123456.jks")
+            storePassword = "123456"
+            keyAlias = "testgif"
+            keyPassword = "123456"
+        }
+    }
 }
 
 dependencies {
